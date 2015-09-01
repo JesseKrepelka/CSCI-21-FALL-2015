@@ -1,5 +1,6 @@
 /*
  * Programming Challenge 1
+ * By Jesse Krepelka
  */
 #include <cassert>
 #include <iostream>
