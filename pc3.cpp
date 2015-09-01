@@ -1,8 +1,7 @@
 /*
-+ * Programming Challenge 2
++ * Programming Challenge 3
 + * Jesse Krepelka
 + * 9/1/15
-+ *
 + */
 #include <cassert>
 #include <cmath>
