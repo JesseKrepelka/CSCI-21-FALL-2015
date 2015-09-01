@@ -5,6 +5,7 @@
 #include <cmath>
 #include <iostream>
 #include <sstream>
+#include <cctype>
 using namespace std;
 
 string goldilocks (string item, int number);
@@ -99,7 +100,8 @@ string goldilocks (string item, int number) {
  *           cannot be determined (which can happen if an invalid argument is passed in)
  */
 int rockScissorPaper (char playerOne, char playerTwo) {
-	playerTwo = toLower(playerTwo);
+	playerOne = tolower(playerOne);
+	playerTwo = tolower(playerTwo);
 	switch(playerOne){
 		case 'r':
 			switch(playerTwo){
@@ -112,10 +114,31 @@ int rockScissorPaper (char playerOne, char playerTwo) {
 				default:
 					return(0);
 			}
+		case 'p':
+			switch(playerTwo){
+				case 'r':
+					return(1);
+				case 'p':
+					return(3);
+				case 's':
+					return(2);
+				default:
+					return(0);
+			}
+		case 's':
+			switch(playerTwo){
+				case 'r':
+					return(2);
+				case 'p':
+					return(1);
+				case 's':
+					return(3);
+				default:
+					return(0);
+			}
+		default:
+			return(0);
 	}
-	
-	
-	// YOU MUST USE A SWITCH IN THIS FUNCTION
 }
 
 /*
@@ -124,7 +147,8 @@ int rockScissorPaper (char playerOne, char playerTwo) {
  * @return an int containing the ASCII value of the character
  */
 int asciiValue (char c) {
-	// CODE HERE
+	int ascii = c;
+	return(ascii);
 }
 
 /*
@@ -133,7 +157,10 @@ int asciiValue (char c) {
  * @return a string containing the input string, converted to all lowercase characters.
  */
 string toLower (string input) {
-	//
+	for(int i = 0; i < input.length(); i++) {
+		input[i] = tolower(input[i]);
+	}
+	return(input);
 }
 
 /*
@@ -142,7 +169,10 @@ string toLower (string input) {
  * @return a string containing the input string, converted to all uppercase characters.
  */
 string toUpper (string input) {
-	// CODE HERE
+	for(int i = 0; i < input.length(); i++) {
+		input[i] = toupper(input[i]);
+	}
+	return(input);
 }
 
 /*
@@ -155,7 +185,7 @@ string toUpper (string input) {
  * @return a char containing the character from the input string at charIndex position
  */
 char getCharacter (string input, int charIndex) {
-	// CODE HERE
+	return(input.at(charIndex));
 }
 
 /*
