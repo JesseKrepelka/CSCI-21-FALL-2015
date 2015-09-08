@@ -16,8 +16,8 @@ void hello();
 void printMessage(string message);
 int getAnswer();
 int findLarger(int n1, int n2);
-int getStats(string s, int& alphaCount, int& digitCount);//fill this shit yo
-string buildMessage(string s, bool allCaps); //not done
+int getStats(string s, int& alphaCount, int& digitCount);
+string buildMessage(string s = "", bool allCaps = false); 
 
 /*
  * function name: hello
@@ -105,7 +105,7 @@ int getStats(string s, int& alphaCount, int& digitCount){
  * true, convert s to all uppercase letters before concatenating it with "Message: ". If s is empty string, 
  * return "Message: empty".
  */
-string buildMessage(string s = "", bool allCaps = false){
+string buildMessage(string s, bool allCaps){
 	if (s != ""){
 		if (allCaps == true){
 			for(int i = 0; i < s.length(); i++) {
