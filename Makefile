@@ -44,3 +44,11 @@ challenge-7: pc7.cpp
 # Date completed: 9-17-15
 challenge-8: pc8.cpp
 	g++ -o challenge-8 pc8.cpp
+	
+	
+
+
+# Target for programming project 1
+# Date completed: 9-18-15
+project-1: pp1.cpp
+	g++ -o project-1 pp1.cpp
