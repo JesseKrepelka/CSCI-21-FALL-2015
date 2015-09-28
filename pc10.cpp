@@ -1,5 +1,8 @@
 /*
  * Programming Challenge 10
+ * Written by: Jesse Krepelka
+ * 
+ * completed on: 9/24/15
  */
 #include <cassert>
 #include <iomanip>
