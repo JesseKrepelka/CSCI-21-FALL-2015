@@ -50,6 +50,15 @@ challenge-8: pc8.cpp
 challenge-9: pc9.cpp
 	g++ -o challenge-9 pc9.cpp
 
+# Target for programming challenge 10
+# Date completed: 9-24-15
+challenge-10: pc10.cpp
+	g++ -o challenge-10 pc10.cpp
+	
+# Target for programming challenge 11
+# Date completed: 9-24-15
+challenge-11: pc11.cpp
+	g++ -o challenge-11 pc11.cpp
 
 # Target for programming project 1
 # Date completed: 9-18-15
