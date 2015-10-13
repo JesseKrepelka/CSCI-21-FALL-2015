@@ -132,18 +132,17 @@ string& ShoppingList::getItem(unsigned int index){
 }
 string ShoppingList::removeItem(unsigned int index){
 	if(index < itemCount){
-		string returnThis = items[index];
 		for(int i = index; i < itemCount-1; i++){
 			items[i] = items[i+1];
 		}
 		itemCount--;
-		return returnThis;
+		return items[index];
 	}
 	else{
 		throw ArrayException("INVALID ARRAY INDEX");
 	}
 }
-
+ 
 /*
  * Unit testing functions. Do not alter.
  */
