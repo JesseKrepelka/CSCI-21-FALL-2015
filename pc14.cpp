@@ -1,7 +1,7 @@
 /*
  * Programming Challenge 14
  * By Jesse Krepelka
- *
+ * 
  * Completed on 10-13-15
  */
 #include <cassert>
@@ -69,7 +69,7 @@ class ShoppingList {
          */
         string removeItem (unsigned int index);
 
-    private:
+    private: 
 
         string items[10];
         unsigned int maxItems;
@@ -100,10 +100,10 @@ ShoppingList::ShoppingList(){
 	maxItems = 10;
 	itemCount = 0;
 }
-unsigned int ShoppingList::getMaxItems()const{
+unsigned int ShoppingList::getMaxItems() const{
 	return maxItems;
 }
-unsigned int ShoppingList::getItemCount()const{
+unsigned int ShoppingList::getItemCount() const{
 	return itemCount;
 }
 bool ShoppingList::addItem(string theItem){
@@ -115,7 +115,7 @@ bool ShoppingList::addItem(string theItem){
 	return false;
 }
 string ShoppingList:: getItem(unsigned int index) const{
-	if(index >= 0 && index < itemCount){
+	if(index < itemCount){
 		return items[index];
 	}
 	else{
@@ -123,7 +123,7 @@ string ShoppingList:: getItem(unsigned int index) const{
 	}
 }
 string& ShoppingList::getItem(unsigned int index){
-	if(index >= 0 && index < itemCount){
+	if(index < itemCount){
 			return items[index];
 	}
 	else{
@@ -131,13 +131,11 @@ string& ShoppingList::getItem(unsigned int index){
 	}
 }
 string ShoppingList::removeItem(unsigned int index){
-	if(index >= 0 && index < itemCount){
+	if(index < itemCount){
 		string returnThis = items[index];
-//So does it auto pack the array or what?		
-/*		for(int i = index; i < itemCount; i++){
+		for(int i = index; i < itemCount-1; i++){
 			items[i] = items[i+1];
 		}
-*/		
 		itemCount--;
 		return returnThis;
 	}
