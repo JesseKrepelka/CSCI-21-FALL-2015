@@ -75,6 +75,12 @@ challenge-13: pc13.cpp
 challenge-14: pc14.cpp
 	g++ -o challenge-14 pc14.cpp
 
+# Target for programming challenge 16
+# Date completed: 10-20-15
+challenge-16: pc16.cpp
+	g++ -o challenge-16 pc16.cpp
+
+
 # Target for programming project 1
 # Date completed: 9-18-15
 project-1: pp1.cpp
