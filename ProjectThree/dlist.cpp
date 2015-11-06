@@ -151,7 +151,7 @@ void DLList::clear(){
     }
 }
 
-ostream& DLList::operator<< (ostream& out, const DLList& src){
+/*ostream& DLList::operator<< (ostream& out, const DLList& src){
         stringstream ss;
         if(src != NULL){
                 for (DLNode* i = src; i != NULL; i = i->getNextNode()){
@@ -167,3 +167,4 @@ ostream& DLList::operator<< (ostream& out, const DLList& src){
         }
         return out;
 }
+*/
