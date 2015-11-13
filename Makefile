@@ -5,6 +5,8 @@
 # Programmer: Jesse Krepelka
 #
 
+FLAGS: -Wall -Wextra -pedantic
+
 # Target for programming challenge 1
 # Date completed: 
 challenge-1: pc1.cpp
@@ -48,38 +50,42 @@ challenge-8: pc8.cpp
 # Target for programming challenge 9
 # Date completed: 9-22-15
 challenge-9: pc9.cpp
-	g++ -o challenge-9 pc9.cpp
+	g++ -o $(FLAGS) challenge-9 pc9.cpp
 
 # Target for programming challenge 10
 # Date completed: 9-24-15
 challenge-10: pc10.cpp
-	g++ -o challenge-10 pc10.cpp
+	g++ -o $(FLAGS) challenge-10 pc10.cpp
 	
 # Target for programming challenge 11
 # Date completed: NOT
 challenge-11: pc11.cpp
-	g++ -o challenge-11 pc11.cpp
+	g++ -o $(FLAGS) challenge-11 pc11.cpp
 	
 # Target for programming challenge 12
 # Date completed: 10-1-15
 challenge-12: pc12.cpp
-	g++ -o challenge-12 pc12.cpp
+	g++ -o $(FLAGS) challenge-12 pc12.cpp
 
 # Target for programming challenge 13
 # Date completed: 10-6-15
 challenge-13: pc13.cpp
-	g++ -o challenge-13 pc13.cpp
+	g++ -o $(FLAGS) challenge-13 pc13.cpp
 
 # Target for programming challenge 14
 # Date completed: 10-13-15
 challenge-14: pc14.cpp
-	g++ -o challenge-14 pc14.cpp
+	g++ -o $(FLAGS) challenge-14 pc14.cpp
 
 # Target for programming challenge 16
 # Date completed: 10-20-15
 challenge-16: pc16.cpp
-	g++ -o challenge-16 pc16.cpp
+	g++ -o $(FLAGS) challenge-16 pc16.cpp
 
+# Target for programming challenge 23
+# Date completed: 11-12-15
+challenge-23: pc23.cpp
+	g++ -o $(FLAGS) challenge-23 pc23.cpp
 
 # Target for programming project 1
 # Date completed: 9-18-15
